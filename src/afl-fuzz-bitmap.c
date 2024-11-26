@@ -1281,7 +1281,7 @@ static u8 run_valuation_binary(afl_state_t *afl, char** argv, u32 timeout, char*
 }
 
 u8 get_valuation(afl_state_t *afl, char** argv, u8* use_mem, u32 len, u8 crashed) {
-  ACTF("[PacFuzz] [targets] [num %d] [time %llu]", afl->fsrv.trace_targets->num, get_cur_time() - afl->start_time);
+  // ACTF("[PacFuzz] [targets] [num %d] [time %llu]", afl->fsrv.trace_targets->num, get_cur_time() - afl->start_time);
   if (afl->fsrv.trace_targets->num > 0) {
     u32 val_hash;
     u8 *valuation_file;
