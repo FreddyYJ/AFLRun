@@ -604,7 +604,7 @@ s32 init_trim_py(void *py_mutator, u8 *buf, size_t buf_size) {
 
 }
 
-u32 fuzz_count_py(void *py_mutator, const u8 *buf, size_t buf_size) {
+u32 fuzz_count_py(void *py_mutator, const u8 *buf, size_t buf_size, u32 saved_max) {
 
   PyObject *py_args, *py_value;
 

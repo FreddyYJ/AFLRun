@@ -1141,7 +1141,7 @@ void run_afl_custom_queue_new_entry(afl_state_t *, struct queue_entry *, u8 *,
 struct custom_mutator *load_custom_mutator_py(afl_state_t *, char *);
 void                   finalize_py_module(void *);
 
-u32         fuzz_count_py(void *, const u8 *, size_t);
+u32         fuzz_count_py(void *, const u8 *, size_t, u32);
 void        fuzz_send_py(void *, const u8 *, size_t);
 size_t      post_process_py(void *, u8 *, size_t, u8 **);
 s32         init_trim_py(void *, u8 *, size_t);
